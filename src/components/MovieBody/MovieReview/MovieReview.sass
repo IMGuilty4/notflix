@@ -1,0 +1,50 @@
+.movie__review
+    width: 80%
+    margin: 20px auto
+    color: #FFF
+    display: flex
+    flex-direction: row
+    background-color: #222
+    @media (max-width: 800px)
+        flex-direction: column
+    .review__left
+        display: flex
+        flex-direction: column
+        margin: 15px
+        min-width: 20%
+        max-width: 20%
+        img
+            margin: 10px
+            min-width: 120px
+            max-width: 120px
+            min-height: 120px
+            max-height: 120px
+        @media (max-width: 800px)
+            min-width: unset
+            max-width: unset
+            flex-direction: row
+        @media (max-width: 400px)
+            align-items: center
+            flex-direction: column
+        .review__namedata
+            font-size: 1.1em
+            display: flex
+            flex-direction: column
+            @media (max-width: 800px)
+                flex-direction: row
+                flex-wrap: wrap
+                align-items: center
+                font-size: 1em
+            @media (max-width: 400px)
+                justify-content: center
+            span
+                margin: 10px
+    .review__right
+        display: flex
+        align-items: center
+        .review__content
+            font-size: 0.9em
+            text-indent: 20px
+            max-width: 100%
+            overflow: hidden
+            padding: 20px

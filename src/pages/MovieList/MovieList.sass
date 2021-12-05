@@ -1,0 +1,21 @@
+
+nav
+    display: flex
+    align-items: center
+    margin: 10px 0
+    ul
+        margin: 0 auto !important
+        li:first-of-type
+            button
+                svg
+                    color: red !important
+        li:last-of-type
+            button
+                svg
+                    color: red !important
+        li
+            button, div
+                color: white !important
+        @media (max-width: 360px)
+            li:nth-child(8)
+                display: none !important

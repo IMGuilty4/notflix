@@ -1,0 +1,42 @@
+.movie
+    width: 100%
+    h3
+        color: white
+        text-align: center
+        font-size: 1.3em
+        @media (max-width: 700px)
+            font-size: 1.2em
+    .movie__similar
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-evenly
+        width: 80%
+        margin: 0 auto
+        padding: 20px 0
+        flex-wrap: wrap
+        @media (max-width: 700px)
+            flex-direction: column
+        a
+            @media (max-width: 1100px)
+                &:last-of-type
+                    display: none
+            div
+                display: flex
+                justify-content: center
+                align-items: center
+                transition: 0.5s ease
+                cursor: pointer
+                @media (max-width: 700px)
+                    margin-top: 15px !important
+                &:hover
+                    transform: scale(1.1)
+                img
+                    max-height: 300px
+                    height: 300px
+                    @media (max-width: 825px)
+                        max-height: 250px
+                    @media (max-width: 700px)
+                        max-height: 300px
+    .MuiAlert-root svg
+        color: #E50914 !important

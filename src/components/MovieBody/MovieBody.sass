@@ -1,0 +1,63 @@
+.movie__body
+    background-color: #111
+    max-width: 100%
+    margin: 30px auto
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    align-items: center
+    .movie__container
+        display: flex
+        flex-direction: row
+        width: 80%
+        margin: 0 auto
+        .movie__overview
+            padding: 20px
+            display: flex
+            flex-direction: row
+            @media (max-width: 500px)
+                flex-wrap: wrap
+                padding: 20px 0px
+            .movie__text
+                margin: 10px
+                min-width: 280px
+                color: #fff
+                @media (max-width: 500px)
+                    margin: 10px 0
+                    order: 2
+            .movie__rating
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                color: #fff
+                background-color: green
+                min-width: 75px
+                height: 47px
+                border-radius: 0.5vw
+                padding: 2px
+                @media (max-width: 500px)
+                    order: 1
+                .movie__rate
+                    display: flex
+                    flex-direction: row
+                    align-self: center
+                    align-items: center
+                    p
+                        font-size: 1.3rem
+                        color: #fff
+                        font-weight: 700
+                .movie_votes
+                    font-size: 0.75rem
+        .movie__poster
+            @media (max-width: 800px)
+                display: none
+            .poster__image
+                width: 320px
+        i
+.MuiSvgIcon-root
+    color: gold
+
+iframe
+    display: flex
+    margin: 20px auto

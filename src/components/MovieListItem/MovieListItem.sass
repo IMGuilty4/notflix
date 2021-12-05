@@ -1,0 +1,33 @@
+.movielist__item
+    display: flex
+    flex-direction: row
+    max-width: 1000px
+    margin: 20px auto
+    cursor: pointer
+    padding: 20px
+    border-radius: 40px
+    background-color: #222
+    overflow: hidden
+    transition: all 0.5s ease
+    &:hover
+        transform: scale(1.05)
+    .movielist__left
+        img
+            border-radius: 20px
+            @media (max-width: 800px)
+                display: none
+    .movielist__right
+        margin: 0 0 0 20px
+        padding: 10px
+        width: 100%
+        font-size: 1.2em
+        color: white
+        border-radius: 20px
+        opacity: 0.8
+        background-color: #222
+        @media (max-width: 800px)
+            margin: unset
+        div
+            margin: 10px 0
+        .movielist__moviename
+            font-size: 2rem
